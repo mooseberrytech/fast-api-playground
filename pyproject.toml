@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "fast-api-playground"
+version = "0.1.0"
+description = ""
+authors = ["Adriana Vasiu <vasiu.adriana@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.115.0"}
+sqlalchemy = "^2.0.35"
+pydantic = "^2.9.2"
+schemathesis = "^3.36.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+flake8 = "^7.1.1"
+flake8-pyproject = "^1.2.3"
+
+[tool.black]
+line-length = 120
+
+[tool.flake8]
+max-line-length = 120
+count = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
