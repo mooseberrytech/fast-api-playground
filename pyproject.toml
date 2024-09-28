@@ -2,7 +2,7 @@
 name = "fast-api-playground"
 version = "0.1.0"
 description = ""
-authors = ["Adriana Vasiu <vasiu.adriana@gmail.com>"]
+authors = ["Adriana Vasiu <adriana@test.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
@@ -11,6 +11,7 @@ fastapi = {extras = ["standard"], version = "^0.115.0"}
 sqlalchemy = "^2.0.35"
 pydantic = "^2.9.2"
 schemathesis = "^3.36.2"
+pytest = "^8.3.3"
 
 
 [tool.poetry.group.dev.dependencies]

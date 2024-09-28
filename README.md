@@ -12,9 +12,14 @@ The project is using [poetry](https://python-poetry.org/) for managing dependenc
 
 `poetry run fastapi dev src/main.py`
 
-## How to run the schemathesis tests
+## How to run the schemathesis tests from command line
 
 1. Run the app 
-2. Run `poetry run st run http://127.0.0.1:8000/openapi.json --experimental=openapi-3.1  -c all`
+2. Run `poetry run schemathesis run http://127.0.0.1:8000/openapi.json --experimental=openapi-3.1  -c all`
+
+## How to run the schemathesis tests with pytest
+
+`poetry run pytest`
+
 
 
